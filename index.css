@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0 ;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+.logo {
+    height: 40px;
+    width: 200px;
+    position: fixed;
+    bottom:0;
+    right:0;
+    z-index: 2;
+}
+#achtergrond {
+    /* max-width: 10vw; */
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    width: 2793px;
+    height: 1975px;
+    z-index: 1;
+    position: fixed;
+}
+#projecten {
+    /* max-width: 10vw; */
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    width: 2793px;
+    height: 1975px;
+    z-index: 1;
+    position: fixed;
+}
+
+.clickbaar {
+    cursor: pointer;
+}
