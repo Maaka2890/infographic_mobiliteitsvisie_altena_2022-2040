@@ -46,3 +46,56 @@ body {
 .clickbaar {
     cursor: pointer;
 }
+
+text.pointer {
+    cursor: pointer;
+  }
+
+.text {
+  text-align: center;
+  font-family: "Segoe UI";
+  color: white;
+  margin-left: 25pt;
+  margin-right: 25pt;
+}
+
+#popupContainer {
+    display:none;
+    box-sizing:border-box;
+    width:560px; padding:30px 40px;
+    position:fixed; left:50%; z-index:10000; margin-left:-280px;
+    background:#ECF0F1;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.27);
+  }
+  #popupClose {
+    position:absolute; right:0; top:0;
+    font-size:20px; color:#22313F;
+    cursor:pointer;
+  }
+    
+  /*---Popup Msg---*/
+  #popupMsg {margin-bottom:20px; color:#22313F;}
+#popupMsgheader {
+    font-size:15px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Segoe UI";
+}
+  #popupMsgsubheader {
+    font-size:10px;
+  font-family: "Segoe UI";
+    text-align: left;}
+  
+  .field {
+    width:450px; height:45px;
+    background:rgba(0,0,0,0);
+  }
+  
+  #popupOverlay {
+    width:100%; height:100%;
+    position:fixed; left:0; top:0;
+    z-index:9999;
+    background:rgba(0,0,0,0.5);
+    display:none;
+  }
