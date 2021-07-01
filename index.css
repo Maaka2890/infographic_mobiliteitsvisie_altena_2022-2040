@@ -50,7 +50,9 @@ body {
 text.pointer {
     cursor: pointer;
   }
-
+circle.pointer {
+    cursor: pointer;
+  }
 .text {
   text-align: center;
   font-family: "Segoe UI";
