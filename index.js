@@ -67,6 +67,10 @@ function clickFunction(projectnr) {
             document.getElementById("popupMsgheader").innerHTML = "7. Bepalen en inrichten regionale fietsnetwerk in Almkerk en Waardhuizen";
             document.getElementById("popupMsgsubheader").innerHTML = "Uit de functionele eisen opgesteld voor het regionale fietsnetwerk, komt naar voren dat er in Almkerk en Waardhuizen sprake is van ontbrekende schakels in het netwerk. Het huidige netwerk stopt bij aankomst in Almkerk en in Waardhuizen loopt het momenteel door de kern. Hoe dit netwerk binnen of rond beide kernen vormgegeven wordt, zullen we binnen dit project beantwoorden en realiseren.";
             break;
+        case 71:
+            document.getElementById("popupMsgheader").innerHTML = "7. Bepalen en inrichten regionale fietsnetwerk in Almkerk en Waardhuizen";
+            document.getElementById("popupMsgsubheader").innerHTML = "Uit de functionele eisen opgesteld voor het regionale fietsnetwerk, komt naar voren dat er in Almkerk en Waardhuizen sprake is van ontbrekende schakels in het netwerk. Het huidige netwerk stopt bij aankomst in Almkerk en in Waardhuizen loopt het momenteel door de kern. Hoe dit netwerk binnen of rond beide kernen vormgegeven wordt, zullen we binnen dit project beantwoorden en realiseren.";
+            break;
         case 8:
             document.getElementById("popupMsgheader").innerHTML = "8. Verkennen en realiseren regionale fietsverbinding vanaf De Tol naar de Merwedebrug";
             document.getElementById("popupMsgsubheader").innerHTML = "Door een direct fietspad te realiseren vanaf De Tol naar de Merwedebrug, wordt er een ontbrekende schakel opgevuld langs de A27 en ontstaat er een regionale (snel)fietsverbinding vanuit Gorinchem naar Oosterhout en Breda. Hiermee wordt de gemeente Altena ook direct aangesloten op het snelfietsnetwerk van Brabant en vormt het in potentie de schakel tussen de snelfietsnetwerken van de provincies Noord-Brabant en Zuid-Holland. De gemeente Altena wil dit fietspad samen met de provincie Noord-Brabant en de Regio West-Brabant gaan verkennen en realiseren.";
