@@ -1,42 +1,42 @@
 
 function clickFunction(projectnr) {
-    var animationspeed=800,
-        modal=$('#popupContainer'),
-        modalBG=$('#popupOverlay');
-    
+    var animationspeed = 800,
+        modal = $('#popupContainer'),
+        modalBG = $('#popupOverlay');
+
     //open popup
     modal.css({
-      'top':'-400px',
-      'opacity':0,
-      'display':'block'
+        'top': '-400px',
+        'opacity': 0,
+        'display': 'block'
     });
-    modalBG.fadeIn(animationspeed/2);
-    modal.delay(animationspeed/4).animate({
-          'top':'30px',
-          'opacity':1
-      }, animationspeed/2);
- 
+    modalBG.fadeIn(animationspeed / 2);
+    modal.delay(animationspeed / 4).animate({
+        'top': '30px',
+        'opacity': 1
+    }, animationspeed / 2);
+
     //close popup
     $('#popupOverlay').click(popupClose);
-    
-    $('body').keyup(function(e){
-      if(e.which===27){popupClose();}
+
+    $('body').keyup(function (e) {
+        if (e.which === 27) { popupClose(); }
     });
-    
+
     $('#popupClose').click(popupClose);
-    
+
     //close popup function
-    function popupClose(){
-      modalBG.delay(animationspeed/3).fadeOut(animationspeed/3);
-      modal.animate({
-        'top':'-400px',
-        'opacity':0
-      }, animationspeed/4, function(){
-        modal.css({
-          'opacity':1,
-          'display':'none'
+    function popupClose() {
+        modalBG.delay(animationspeed / 3).fadeOut(animationspeed / 3);
+        modal.animate({
+            'top': '-400px',
+            'opacity': 0
+        }, animationspeed / 4, function () {
+            modal.css({
+                'opacity': 1,
+                'display': 'none'
+            });
         });
-      });
     };
     switch (projectnr) { // execute 
         case 1:
@@ -46,7 +46,7 @@ function clickFunction(projectnr) {
         case 2:
             document.getElementById("popupMsgheader").innerHTML = "2. Aanpak verkeersveiligheidsknelpunten tussen modaliteiten ontwikkelen en uitvoeren";
             document.getElementById("popupMsgsubheader").innerHTML = "We willen sterk inzetten op het voorkomen van verkeersincidenten en gaan dan ook concreet aan de slag met het verbeteren van de verkeersveiligheid in het algemeen. Daarom ontwikkelen we een aanpak om conflicten tussen verschillende weggebruikers (vaak tussen fietsers en gemotoriseerd verkeer) op te lossen. Dit doen we volgens de koers uit het Strategisch Plan Verkeersveiligheid 2030. Overheden en maatschappelijke partijen zetten gezamenlijk in op een meer ‘risicogestuurd’ verkeersveiligheidsbeleid: ongevallen voorkómen door de belangrijkste risico’s in het verkeerssysteem proactief aan te pakken.In het kader van dit project wordt de lijst met conflictpunten opgesteld en voortdurend aangevuld. Er zullen conflictpunten verdwijnen, maar mogelijk ook bijkomen.";
-           break;
+            break;
         case 3:
             document.getElementById("popupMsgheader").innerHTML = "3. Opstellen verkeersvisie kern Hank";
             document.getElementById("popupMsgsubheader").innerHTML = "In Hank is er bovenmatig sprake van overlast door ongewenst doorgaand verkeer door de kern en de Kerkstraat in het bijzonder: sluipverkeer van de A27, recreatief verkeer richting de Kurenpolder en landbouwverkeer dat zich vanuit het oosten naar percelen in het westen verplaatst. Daarom wordt in samenspraak met de inwoners aan een multimodale verkeersvisie gewerkt.";
@@ -54,7 +54,7 @@ function clickFunction(projectnr) {
         case 4:
             document.getElementById("popupMsgheader").innerHTML = "4. Aanpak Middenweg";
             document.getElementById("popupMsgsubheader").innerHTML = "De Middenweg tussen Andel en Veen is in het netwerk gedefinieerd als regionale fietsroute. Er rijdt op dit moment meer verkeer dan gewenst voor een regionale fietsroute zonder vrijliggende fietsinfrastructuur en er wordt te hard gereden. Dit levert voor de fietser gevaarlijke situaties op en vraagt om een concrete aanpak, waar we  op dit moment al mee bezig zijn.";
-            break;       
+            break;
         case 5:
             document.getElementById("popupMsgheader").innerHTML = "5. Zorg dragen voor toekomstbestendige veren";
             document.getElementById("popupMsgsubheader").innerHTML = "Voor een deel van onze inwoners vervullen de veren een belangrijke rol in hun dagelijkse verplaatsingen. Bij het vormgeven van de netwerken is ervoor gezorgd dat de hoofdnetwerken voor fiets en auto altijd via de vaste oeververbindingen lopen. Voornamelijk voor fietsverbindingen (o.a. scholieren en recreanten) zijn de veerdiensten van groter belang. Hoewel een route via de vaste oeververbinding vaak sneller is, nemen veel fietsers toch een veer omdat de af te leggen afstand dan korter is. Periodiek onderzoeken we het gebruik, het belang en de functie van elk van de veren en kijken we of er al dan niet moet worden bijgestuurd. Bijvoorbeeld hoe we het gebruik (bijv. de dienstregeling) kunnen  optimaliseren. Daarbij kijken we naar de rol van de veren in het auto- , OV- en fietsnetwerk, maar ook naar hun rol voor landbouw- en recreatief verkeer. Dit doen we vanzelfsprekend samen met de betrokken oevergemeente(n).";
@@ -67,7 +67,7 @@ function clickFunction(projectnr) {
             document.getElementById("popupMsgheader").innerHTML = "7. Bepalen en inrichten regionale fietsnetwerk in Almkerk en Waardhuizen";
             document.getElementById("popupMsgsubheader").innerHTML = "Uit de functionele eisen opgesteld voor het regionale fietsnetwerk, komt naar voren dat er in Almkerk en Waardhuizen sprake is van ontbrekende schakels in het netwerk. Het huidige netwerk stopt bij aankomst in Almkerk en in Waardhuizen loopt het momenteel door de kern. Hoe dit netwerk binnen of rond beide kernen vormgegeven wordt, zullen we binnen dit project beantwoorden en realiseren.";
             break;
-        case 8:    
+        case 8:
             document.getElementById("popupMsgheader").innerHTML = "8. Verkennen en realiseren regionale fietsverbinding vanaf De Tol naar de Merwedebrug";
             document.getElementById("popupMsgsubheader").innerHTML = "Door een direct fietspad te realiseren vanaf De Tol naar de Merwedebrug, wordt er een ontbrekende schakel opgevuld langs de A27 en ontstaat er een regionale (snel)fietsverbinding vanuit Gorinchem naar Oosterhout en Breda. Hiermee wordt de gemeente Altena ook direct aangesloten op het snelfietsnetwerk van Brabant en vormt het in potentie de schakel tussen de snelfietsnetwerken van de provincies Noord-Brabant en Zuid-Holland. De gemeente Altena wil dit fietspad samen met de provincie Noord-Brabant en de Regio West-Brabant gaan verkennen en realiseren.";
             break;
@@ -131,6 +131,6 @@ function clickFunction(projectnr) {
         default:
             document.getElementById("popupMsgheader").innerHTML = "Project titel";
             document.getElementById("popupMsgsubheader").innerHTML = "Hier komt een beschrijving van het project";
-             
+
     };
 };

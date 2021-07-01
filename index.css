@@ -77,13 +77,13 @@ text.pointer {
   /*---Popup Msg---*/
   #popupMsg {margin-bottom:20px; color:#22313F;}
 #popupMsgheader {
-    font-size:15px;
+    font-size:30px;
     text-align: center;
     font-weight: bold;
     font-family: "Segoe UI";
 }
   #popupMsgsubheader {
-    font-size:10px;
+    font-size:20px;
   font-family: "Segoe UI";
     text-align: left;}
   
